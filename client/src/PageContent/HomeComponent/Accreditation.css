@@ -1,0 +1,21 @@
+.global-section {
+  padding: clamp(20px, 4vw, 30px);
+  text-align: center;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: clamp(10px, 2vw, 30px);
+  flex-wrap: nowrap; /* keep in one row */
+  overflow-x: auto; /* scroll on small screens */
+  padding: clamp(10px, 2vw, 20px);
+}
+
+.logo-item img {
+  width: clamp(100px, 20vw, 250px);
+  height: auto;
+  object-fit: contain;
+}
+

@@ -1,0 +1,46 @@
+.life-campus {
+  margin: 0 auto;
+   padding: clamp(10px, 1.5vw, 20px) clamp(20px, 4vw, 60px);
+  box-shadow: 
+    0 -6px 15px rgba(0, 0, 0, 0.2),  /* top shadow */
+    0 6px 15px rgba(0, 0, 0, 0.2);   /* bottom shadow */
+}
+
+/* Layout */
+.campus-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: clamp(15px, 2vw, 30px);
+}
+
+/* Left Text */
+.campus-left {
+  margin-left: clamp(0px, 5vw, 80px);
+  flex: 1;
+  text-align: left;
+}
+
+.campus-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+}
+
+/* Right Image */
+.campus-right {
+  flex: 1;
+  text-align: center;
+}
+
+
+/* Tablet */
+@media (max-width: 576px) {
+  .campus-content {
+    flex-direction:column-reverse;
+    text-align: center;
+  }
+
+}
+

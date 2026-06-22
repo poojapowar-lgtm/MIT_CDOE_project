@@ -1,0 +1,74 @@
+.sidebar {
+  width: clamp(150px, 25vw, 250px);
+  margin-right: auto;
+  padding: clamp(5px, 1.5vw, 25px) clamp(5px, 1vw, 15px);
+  background: whitesmoke;
+  box-shadow: 6px 0 10px -2px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+/* Sidebar Menu */
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+
+/* link */
+.sidebar li {
+  margin-bottom: clamp(8px, 1vw, 15px);
+
+}
+
+.sidebar li a {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  font-size: clamp(12px, 1.2vw, 16px);
+  font-weight: 400;
+  padding: clamp(4px, 1vw, 10px) clamp(6px, 1vw, 12px);
+  color: black;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+/* Hover effect */
+.sidebar li.active a,
+.sidebar li a:hover {
+  background: rgba(69, 8, 108, 1);
+  color: white;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+@media (max-width: 768px) {
+
+  /* Sidebar full width */
+  .sidebar {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  /* Make UL grid (2 columns) */
+  .sidebar ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2px;
+  }
+
+  /* Remove bottom spacing (grid handles it) */
+  .sidebar li {
+    margin-bottom: 0;
+  }
+
+  /* Hover / active effect */
+  .sidebar li a:hover,
+  .sidebar li.active a {
+    border-bottom: 1px solid #722327;
+    color: #004d00;
+    font-weight: 600;
+  }
+
+}

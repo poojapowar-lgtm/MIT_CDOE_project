@@ -1,0 +1,47 @@
+.national-rank {
+  padding: clamp(10px, 1.5vw, 20px) clamp(20px, 4vw, 60px);
+}
+
+/* Content Layout */
+.rank-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: clamp(10px, 1.5vw, 40px);
+}
+
+.rank-text {
+  position: relative;
+}
+
+/* Button Styling */
+.read-btn {
+  display: block;
+  margin-left: auto;
+  padding: clamp(5px, 1vw, 10px) clamp(12px, 3vw, 24px);
+  font-size: clamp(12px, 1.2vw, 16px);
+  font-weight: 600;
+  color: #fff;
+  border: none;
+  border-radius: clamp(8px, 2vw, 16px);
+  cursor: pointer;
+
+  /* Gradient Background */
+  background: linear-gradient(90deg,
+      rgba(186, 1, 90, 1),
+      rgba(69, 8, 108, 1));
+
+  /* Smooth effects */
+  transition: all 0.3s ease;
+}
+
+/* Hover Effect */
+.read-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Click Effect */
+.read-btn:active {
+  transform: scale(0.96);
+}

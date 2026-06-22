@@ -1,0 +1,64 @@
+/* Leader Section */
+.leader-card {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  padding: clamp(10px, 3vw, 20px) clamp(20px, 3vw, 40px);
+}
+
+.leader-section {
+  display: flex;
+  gap: clamp(20px, 3vw, 40px);
+  align-items: flex-start;
+
+}
+
+.leader-image img {
+  width: clamp(200px, 18vw, 300px);
+  height: auto;
+  /* border-radius: clamp(8px, 2vw, 14px); */
+  border-radius: 50%;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+}
+
+.leader-content {
+  flex: 1;
+}
+
+.leader-name {
+  color: rgba(69, 8, 108, 1);
+  font-size: clamp(15px, 1.6vw, 22px);
+  margin: 5px 0;
+}
+
+.leader-designation {
+  color: goldenrod;
+  font-weight: 600;
+  font-style: italic;
+  margin: 0;
+}
+
+.leader-message {
+  line-height: 1.7;
+}
+
+/* Bottom gallery */
+.leadership-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.leadership-gallery img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+
+/* Mobile View */
+@media (max-width: 1440px) {
+  .leader-section {
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+  }
+}

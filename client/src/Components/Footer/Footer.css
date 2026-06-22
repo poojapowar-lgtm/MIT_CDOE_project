@@ -1,0 +1,72 @@
+.footer {
+  background: linear-gradient(90deg,
+      rgba(186, 1, 90, 1),
+      rgba(69, 8, 108, 1));
+  color: white;
+  padding: clamp(10px, 2vw, 25px) clamp(20px, 5vw, 80px);
+}
+
+
+.ft-logo1 {
+  height: clamp(52px, 8vw, 85px);
+}
+
+
+.footer-container {
+  display: flex;
+  justify-content: center;
+  gap: 70px;
+  padding-top: 20px;
+  flex-wrap: wrap;
+}
+
+.footer-links {
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.map {
+  flex: 1;
+width: 500px;
+  min-height: 200px;
+  border: 0;
+}
+
+/* BOTTOM */
+.footer-bottom {
+  width: 100%;
+  display: block;
+  text-align: center;
+}
+
+.bottom-text {
+  color: wheat;
+  font-size: clamp(10px, 1.2vw, 15px);
+}
+
+.back-to-top {
+  position: fixed;
+  bottom: clamp(20px, 3vw, 40px);
+  right: 8px;
+  width: clamp(30px, 4vw, 50px);
+  height: clamp(30px, 4vw, 50px);
+  border-radius: 50%;
+  background: #0066ff;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  font-size: clamp(18px, 1.5vw, 24px);
+  transition: 0.3s ease;
+  z-index: 999;
+}
+
+.back-to-top:hover {
+  transform: translateY(-4px);
+  background: #004ec2;
+}
+
