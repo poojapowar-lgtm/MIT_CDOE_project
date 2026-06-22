@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./Banner.css";
-import EnquiryForm from "./EnquiryForm";
+
 
 const Banner = () => {
   const [showForm, setShowForm] = useState(false);
