@@ -58,6 +58,7 @@
 
 .content p {
     font-weight: 600;
+    color: wheat;
 }
 
 .content ul {
@@ -105,7 +106,29 @@
     font-size: clamp(0.75rem, 1vw, 0.9rem);
 }
 
-/* 📱 MOBILE RESPONSIVE */
+/*  MODERN BUTTON */
+.programs-btn {
+    position: absolute;
+    top: clamp(10px, 2.5vw, 40px);
+    right: clamp(10px, 1.5vw, 16px);
+    padding: clamp(6px, 1vw, 10px) clamp(12px, 1.5vw, 18px);
+    font-size: clamp(12px, 1vw, 14px);
+    padding: 8px 18px;
+    border-radius: 18px;
+    font-size: clamp(0.8rem, 1vw, 0.95rem);
+    border: none;
+    cursor: pointer;
+    background: linear-gradient(135deg, #ffffff, #e6f0ff);
+    color: black;
+    transition: all 0.3s ease;
+}
+
+/* Click */
+.programs-btn:active {
+    transform: scale(0.96);
+}
+
+/* MOBILE RESPONSIVE */
 @media (max-width: 768px) {
     .programs-container {
         grid-template-columns: 1fr;

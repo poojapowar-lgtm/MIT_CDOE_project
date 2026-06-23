@@ -1,6 +1,7 @@
 /* Leader Section */
 .leader-card {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  border-radius: 18px;
   padding: clamp(10px, 3vw, 20px) clamp(20px, 3vw, 40px);
 }
 

@@ -5,7 +5,6 @@ import { useNavigate } from "react-router-dom";
 
 const AboutMIT = () => {
   const navigate = useNavigate();
-  const [readMore, setReadMore] = useState(false);
 
   return (
     <section className="about">
