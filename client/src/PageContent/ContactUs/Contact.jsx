@@ -4,12 +4,12 @@ import { TbArrowBadgeRightFilled } from "react-icons/tb";
 const contactData = [
     {
         title: "Contact",
-        name: "Pratibha Tiwari",
+        name: "Miss.Pratibha Tiwari",
         phone: "7567437594"
     },
     {
         title: "Contact",
-        name: "Ravindra Bohra",
+        name: "Mr.Ravindra Bohra",
         phone: "8830526490"
     },
     {

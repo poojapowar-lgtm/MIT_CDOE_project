@@ -111,7 +111,7 @@
 }
 
 .title-icon {
-    width: clamp(10px, 1.5vw, 18px);
+    width: clamp(10px, 1.5vw, 15px);
     height: auto;
     margin: 5px 10px 0 0;
 }

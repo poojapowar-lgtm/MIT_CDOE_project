@@ -59,20 +59,22 @@ const Accreditation = () => {
     <section className="global-section">
       <h2 className="title">Accreditation & Ranking</h2>
 
-      <div className="logo-container">
-        {Logos.map((logo) => (
-          <div className="logo-item" key={logo.id}>
-            <img src={logo.src} alt={logo.alt} />
-          </div>
-        ))}
+<div className="logo-slider">
+  <div className="logo-track">
+    {[...Logos, ...Logos].map((logo, index) => (
+      <div className="logo-item" key={index}>
+        <img src={logo.src} alt={logo.alt} />
       </div>
+    ))}
+  </div>
+</div>
 
-      <div className="board-body-container" style={{ margin: "0 auto", width: "85%" }}>
+      <div className="accreditation-container" style={{ margin: "0 auto", width: "85%" }}>
         {globalData.map((item, index) => (
-          <div className="board-card" key={index}>
+          <div className="accreditation-card" key={index}>
 
             {/* Row: Icon + Title */}
-            <h3 className="board-name" style={{textAlign:"left"}}>
+            <h3 className="accreditation-name" style={{ textAlign: "left" }}>
               <img src="/assets/images/icons/circle.png" alt="icon" className="title-icon" />
               <span>{item.title}</span>
             </h3>

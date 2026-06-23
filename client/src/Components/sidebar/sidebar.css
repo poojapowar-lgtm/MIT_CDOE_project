@@ -1,5 +1,5 @@
 .sidebar {
-  width: clamp(150px, 25vw, 250px);
+  width: clamp(150px, 25vw, 280px);
   margin-right: auto;
   padding: clamp(5px, 1.5vw, 25px) clamp(5px, 1vw, 15px);
   background: whitesmoke;
@@ -13,7 +13,6 @@
   padding: 0;
   margin: 0;
 }
-
 
 /* link */
 .sidebar li {

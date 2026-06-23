@@ -3,19 +3,96 @@
   text-align: center;
 }
 
-.logo-container {
+.logo-slider {
+  overflow: hidden;
+  width: 90%;
+  position: relative;
+  margin: 0 auto;
+  padding: clamp(15px, 2vw, 30px) 0;
+}
+
+.logo-track {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: clamp(10px, 2vw, 30px);
-  flex-wrap: nowrap; /* keep in one row */
-  overflow-x: auto; /* scroll on small screens */
-  padding: clamp(10px, 2vw, 20px);
+  width: max-content;
+  gap: clamp(20px, 3vw, 40px);
+  animation: scrollLeft 20s linear infinite;
 }
 
 .logo-item img {
-  width: clamp(100px, 20vw, 250px);
+  width: clamp(100px, 20vw, 240px);
   height: auto;
   object-fit: contain;
 }
 
+/* Individual Logo */
+.logo-item {
+  flex: 0 0 auto;
+}
+
+/* Animation */
+@keyframes scrollLeft {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.accreditation-container {
+  margin: 0 auto;
+  width: 85%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: clamp(15px, 2vw, 40px);
+  border-radius: 16px;
+    padding: clamp(15px, 2vw, 30px);
+  box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.08),
+    inset 0 1px 0 rgba(255, 255, 255, 0.6);
+}
+
+/* Card Styling */
+.accreditation-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+}
+
+/* Title */
+.accreditation-name {
+  display: flex;
+  color: rgba(69, 8, 108, 1);
+  align-items: center;
+  font-size: clamp(16px, 1.5vw, 22px);
+  margin-bottom: clamp(10px, 1.2vw, 16px);
+  border-bottom: 1px solid goldenrod;
+}
+
+/* Icon */
+.title-icon {
+  width: clamp(14px, 1.2vw, 20px);
+  height: clamp(14px, 1.2vw, 20px);
+}
+
+/* Text */
+.page-text p,
+.accreditation-card p {
+  margin: 0;
+}
+
+/* Tablet */
+@media (max-width: 992px) {
+  .accreditation-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+  .accreditation-container {
+    grid-template-columns: 1fr;
+  }
+}

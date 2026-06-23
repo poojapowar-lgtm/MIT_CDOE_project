@@ -1,29 +1,28 @@
-.life-campus {
+.university-profile {
   margin: 0 auto;
-   padding: clamp(10px, 1.5vw, 20px) clamp(20px, 4vw, 60px);
-  box-shadow: 
-    0 -6px 15px rgba(0, 0, 0, 0.2),  /* top shadow */
-    0 6px 15px rgba(0, 0, 0, 0.2);   /* bottom shadow */
+  padding: clamp(10px, 1.5vw, 20px) clamp(20px, 4vw, 80px);
+  box-shadow:
+    0 -4px 10px rgba(0, 0, 0, 0.06),
+    0 4px 10px rgba(0, 0, 0, 0.08);
 }
+
 
 /* Layout */
 .campus-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: clamp(15px, 2vw, 30px);
 }
 
 /* Left Text */
 .campus-left {
-  margin-left: clamp(0px, 5vw, 80px);
   flex: 1;
   text-align: left;
 }
 
 .campus-img {
   width: 100%;
-  height: auto;
+  height: clamp(200px, 30vw, 500px);
   display: block;
   border-radius: 10px;
 }
@@ -31,16 +30,15 @@
 /* Right Image */
 .campus-right {
   flex: 1;
-  text-align: center;
+  text-align: left;
 }
 
 
 /* Tablet */
 @media (max-width: 576px) {
   .campus-content {
-    flex-direction:column-reverse;
+    flex-direction: column;
     text-align: center;
   }
 
 }
-

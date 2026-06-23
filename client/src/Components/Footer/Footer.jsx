@@ -77,7 +77,7 @@ const Footer = () => {
       {/* FOOTER BOTTOM */}
       <div className="footer-bottom">
         <p className="bottom-text">
-          MIT-SoFT Pune © 2025. All Rights Reserved. Designed & Developed by
+         MIT-CDOE Pune © 2026. All Rights Reserved. Designed & Developed by
           MIT-ADT Website Department.
         </p>
       </div>
