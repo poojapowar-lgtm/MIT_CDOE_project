@@ -59,15 +59,15 @@ const Accreditation = () => {
     <section className="global-section">
       <h2 className="title">Accreditation & Ranking</h2>
 
-<div className="logo-slider">
-  <div className="logo-track">
-    {[...Logos, ...Logos].map((logo, index) => (
-      <div className="logo-item" key={index}>
-        <img src={logo.src} alt={logo.alt} />
+      <div className="logo-slider">
+        <div className="logo-track">
+          {[...Logos, ...Logos].map((logo, index) => (
+            <div className="logo-item" key={index}>
+              <img src={logo.src} alt={logo.alt} />
+            </div>
+          ))}
+        </div>
       </div>
-    ))}
-  </div>
-</div>
 
       <div className="accreditation-container" style={{ margin: "0 auto", width: "85%" }}>
         {globalData.map((item, index) => (

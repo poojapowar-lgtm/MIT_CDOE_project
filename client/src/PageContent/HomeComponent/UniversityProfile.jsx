@@ -2,6 +2,30 @@ import React from "react";
 import "./UniversityProfile.css";
 
 const UniversityProfile = () => {
+
+  const universityHighlights = [
+    {
+      title: "Campus & Type",
+      description: "85+ Acres at Rajbaug, Loni Kalbhor, Pune – 412201, Maharashtra, India. Autonomous Private University (State Legislature Act)."
+    },
+    {
+      title: "Established & UGC",
+      description: "Established: 2015 (Act); Operational since 2016–17. UGC Recognition: F-8-33/2015 (CPP-I/PU), dated 10th November 2016."
+    },
+    {
+      title: "Schools & Programmes",
+      description: "17 Schools across multiple Faculties. UG, PG, and Doctoral programmes in Art, Design, Engineering, Management, and more."
+    },
+    {
+      title: "Students & Faculty",
+      description: "12,000+ students (and growing). 110+ Faculty Mentors."
+    },
+    {
+      title: "Placements",
+      description: "300+ companies visit annually for campus recruitment."
+    }
+  ];
+
   return (
     <section className="university-profile">
       {/* Title */}
@@ -22,29 +46,39 @@ const UniversityProfile = () => {
       </div>
 
       <div className="campus-content">
-
-        {/* Left Side */}
+        {/* left Side */}
         <div className="campus-left">
+
+          {/* <h2
+            className="subtitle"
+            style={{ borderTop: "none", borderBottom: "1px solid goldenrod" }}
+          >
+            University Highlights:
+          </h2> */}
+
+          <div className="profile-container">
+            {universityHighlights.map((item, index) => (
+              <div className="profile-card" key={index}>
+
+                {/* Title */}
+                <h3 className="profile-name">
+                  <span>{item.title}</span>
+                </h3>
+
+                {/* Description */}
+                <p>{item.description}</p>
+
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* right Side */}
+        <div className="campus-right">
           <img src="/assets/images/home/inner_bnr.jpg" alt="Campus" className="campus-img" />
         </div>
 
-        {/* Right Side Image */}
-        <div className="campus-right">
 
-          <ul className="page-list ">
-            <h2 className="subtitle" style={{borderTop:"none", borderBottom:"1px solid goldenrod"}}>University Highlights:</h2>
-            <li><b>Campus Area:</b> 85+ Acres at Rajbaug, Loni Kalbhor, Pune – 412201, Maharashtra, India</li>
-            <li><b>Type:</b> Autonomous Private University (State Legislature Act)</li>
-            <li><b>Established:</b> 2015 (Act); Operational since 2016–17</li>
-            <li><b>UGC Recognition:</b> Yes — F-8-33/2015 (CPP-I/PU), dated 10th November 2016</li>
-            <li><b>Constituent Schools:</b> 17 Schools across multiple Faculties</li>
-            <li><b>Programmes Offered:</b> UG, PG, and Doctoral programmes in Art, Design, Engineering,
-              Management, and more</li>
-            <li><b>Student Enrollment:</b> 12,000+ students (and growing)</li>
-            <li><b>Faculty Members:</b> 110+ Faculty Mentors</li>
-            <li><b>Campus Recruiters:</b> 300+ companies visit annually</li>
-          </ul>
-        </div>
       </div>
     </section>
   );

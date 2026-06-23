@@ -12,6 +12,10 @@ const AboutMIT = () => {
       <h2 className="subtitle">Genesis and Evolution</h2>
 
       <div className="about-content">
+        <div className="about-image ">
+          <img src="/assets/images/home/inner_bnr.jpg" alt="Campus" />
+        </div>
+
         {/* Left Side Text */}
         <div className="about-text">
           <p>
@@ -32,16 +36,14 @@ const AboutMIT = () => {
 
           {/* Button */}
           <button
-            className="read-btn"
+            className="know-btn"
             onClick={() => navigate("/aboutus/about-mit")}
           >
             Know More
           </button>
         </div>
 
-        <div className="about-image ">
-          <img src="/assets/images/home/inner_bnr.jpg" alt="Campus" />
-        </div>
+
       </div>
     </section>
   );

@@ -18,10 +18,11 @@
 }
 
 
-
 /*  MODERN BUTTON */
-.read-btn {
+.know-btn {
+  display: block;
   margin-top: 1rem;
+  margin-left: auto;
   width: fit-content;
   background: none;
   padding: 8px 18px;
@@ -38,7 +39,7 @@
 }
 
 /* Click */
-.read-btn:active {
+.know-btn:active {
   transform: scale(0.96);
 }
 

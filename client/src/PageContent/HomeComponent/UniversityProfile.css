@@ -7,30 +7,60 @@
 }
 
 
+/* Make both sections follow SAME inner width */
+.profile-text,
+.campus-content {
+  width: 100%;
+}
+
 /* Layout */
 .campus-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: clamp(20px, 3vw, 40px);
+  width: 100%;
 }
 
-/* Left Text */
-.campus-left {
+.campus-left,
+.campus-right {
   flex: 1;
-  text-align: left;
 }
 
 .campus-img {
   width: 100%;
-  height: clamp(200px, 30vw, 500px);
+  height: clamp(200px, 30vw, 450px);
   display: block;
   border-radius: 10px;
 }
 
-/* Right Image */
-.campus-right {
-  flex: 1;
-  text-align: left;
+.profile-container {
+  gap: clamp(15px, 2vw, 30px);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+/* Card Styling */
+.profile-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+}
+
+/* Title */
+.profile-name {
+  width: max-content;
+  display: flex;
+  margin: 5px;
+  color: rgba(69, 8, 108, 1);
+  align-items: center;
+  font-size: clamp(12px, 1.2vw, 18px);
+  border-bottom: 1px solid goldenrod;
+}
+
+.profile-card p {
+  margin: 0;
 }
 
 
