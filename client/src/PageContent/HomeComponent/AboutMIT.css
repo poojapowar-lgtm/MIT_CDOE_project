@@ -3,6 +3,21 @@
   background: #f8fafc;
 }
 
+.main-title {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  gap: 10px;
+  color: rgba(186, 1, 90, 1);
+}
+
+.main-title::after {
+  content: "";
+  flex: 1;              /* makes line take full available width */
+  height: 2px;
+  background-color: green;
+  margin-top: 15px;
+}
 /* CARD CONTAINER */
 .about-content {
   display: grid;

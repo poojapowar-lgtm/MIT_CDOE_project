@@ -34,14 +34,15 @@ const Header = () => {
           </div>
         </div> */}
 
-        <div >       
-           <h1 class="logo-title">
-          <span>C</span>
-          <span>D</span>
-          <span>O</span>
-          <span>E</span>
-        </h1>
-          <p className="logo-text">Center for Distance and Online Education</p></div>
+        {/* <div >
+          <h1 class="logo-title">
+            <span>C</span>
+            <span>D</span>
+            <span>O</span>
+            <span>E</span>
+          </h1>
+          <p className="logo-text">Center for Distance and Online Education</p>
+        </div> */}
 
       </div>
 

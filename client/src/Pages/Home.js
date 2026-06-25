@@ -5,6 +5,7 @@ import AboutMIT from "../PageContent/HomeComponent/AboutMIT";
 import UniversityProfile from "../PageContent/HomeComponent/UniversityProfile";
 import Accreditation from "../PageContent/HomeComponent/Accreditation";
 import HomePrograms from "../PageContent/HomeComponent/HomePrograms";
+import Department from "../PageContent/HomeComponent/Department";
 
 
 
@@ -15,6 +16,7 @@ const Home = () => {
       <AboutMIT/>
       <UniversityProfile/>
           <HomePrograms/>
+          <Department/>
       <Accreditation/>
   
     </div>

@@ -11,6 +11,7 @@ const AboutUs = () => {
     { name: "About MIT-ADT", path: "about-mit" },
     { name: "University Statute", path: "university-statute" },
     { name: "Leadership Message", path: "leadership-message" },
+    { name: "Vision & Mission", path: "vision" },
     { name: "Leadership", path: "leadership" },
     { name: "Governance", path: "governance" },
   ];
@@ -20,6 +21,7 @@ const AboutUs = () => {
     "about-mit": "About MIT-ADT",
     "university-statute": "University Statute",
     "leadership-message": "Leadership Message",
+    "Vision & Mission": "vision",
     "leadership": "Leadership",
     "governance": "Governance",
   };

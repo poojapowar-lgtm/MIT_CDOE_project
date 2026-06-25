@@ -6,6 +6,8 @@ import Leadership from "../PageContent/About/Leadership";
 import LeadershipMsg from "../PageContent/About/LeadershipMsg";
 import UniversityStatute from "../PageContent/About/UniversityStatute";
 import Governance from "../PageContent/About/Governance";
+import Vision from "../PageContent/About/Vision";
+
 
 
 
@@ -16,6 +18,7 @@ export const AboutRoute = (
     <Route path="about-mit" element={<AboutMIT />} />
     <Route path="leadership" element={<Leadership />} />
     <Route path="leadership-message" element={<LeadershipMsg />} />
+    <Route path="vision" element={<Vision />} />
     <Route path="university-statute" element={<UniversityStatute />} />
     <Route path="governance" element={<Governance />} />
   </Route>

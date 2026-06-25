@@ -3,50 +3,22 @@ import "./about_mit.css";
 
 
 const AboutMIT = () => {
-  const visionData = [
+  const MITVisionData = [
     {
-      img: "/assets/images/icons/vision.png",
-      title: "Vision",
-      description: ["Centre for Distance and Online Education (CDOE) envisions itself as a leader in open and distance education, centre of academic empowerment, digital innovation, and learner development, driven by a spirit of excellence, commitment, flexibility, and to nurture the talent in flexible mode."],
+      img: "/assets/images/icons/mit-vision.png",
+      title: "Our Vision",
+      description: [" MIT Art, Design and Technology University aspires to be the University of Eminence by amalgamating Art, Design, Science and Technology. The University aims to have a transformative impact on society through holistic education, multidisciplinary research ethos, innovation, and entrepreneurial culture."],
     },
     {
-      img: "/assets/images/icons/mission.png",
-      title: "Mission",
-      description: [" Centre for Distance and Online Education (CDOE) mission emphasizes learner empowerment, global relevance, and social responsibility. It strives to create transformative learning experiences through the strategic integration of technology, partnerships, and forward-looking pedagogy in the digital age."],
-    },
-
-    // {
-    //   img: "/assets/images/icons/vision.png",
-    //   title: "Our Vision",
-    //   description: [" MIT Art, Design and Technology University aspires to be the University of Eminence by amalgamating Art, Design, Science and Technology. The University aims to have a transformative impact on society through holistic education, multidisciplinary research ethos, innovation, and entrepreneurial culture."],
-    // },
-    // {
-    //   img: "/assets/images/icons/mission.png",
-    //   title: "Our Mission",
-    //   description: [
-    //     " The Mission of MIT Art, Design and Technology University is to provide impetus to faculty, learners, and staff by developing their innate intellectual capabilities, creative abilities, and entrepreneurial mindset for the socio-economic development of the nation.",
-    //     "Empower learners to become adaptive and agile global professionals through unique specialized programs building academia-industrial partnerships.",
-    //     "Nurture learners to be intellectually curious, technologically equipped, mentally sound, physically fit, spiritually elevated, socio-culturally sensitive, and environmentally conscious through continuous holistic education for the ever-evolving world.",
-    //     "Provide technology-enabled, learner-driven curriculum, value-added courses, simulated learning environments, state-of-the-art infrastructure, and opportunities for community engagement.",
-    //     "Foster a culture of innovation, entrepreneurship, and research to position MIT-ADT graduates as national and global leaders."
-    //   ],
-    // },
-
-    {
-      img: "/assets/images/icons/objectives.png",
-      title: "Objectives",
+      img: "/assets/images/icons/goal.png",
+      title: "Our Mission",
       description: [
-        "The primary objective of the Centre for Distance and Online Education (CDOE) program is to create a learner-centric, inclusive, and digitally empowered platform that equips students with the knowledge and tools required to excel in today’s dynamic world.",
-        "This initiative is a direct reflection of MIT-ADT University’s vision to deliver academic excellence through innovation, inclusivity, and global relevance with social economic development."
-      ]
-    },
-    {
-      img: "/assets/images/icons/purpose.png",
-      title: "Purpose",
-      description: [
-        "At its core, the Centre for Distance and Online Education (CDOE) initiative reflects the ethos of educational democratization.",
-        "It is designed to remove barriers to learning and create pathways for inclusive academic participation. Special attention is given to learners from marginalized backgrounds, rural communities, and those with time or mobility constraints."
-      ]
+        " The Mission of MIT Art, Design and Technology University is to provide impetus to faculty, learners, and staff by developing their innate intellectual capabilities, creative abilities, and entrepreneurial mindset for the socio-economic development of the nation.",
+        "Empower learners to become adaptive and agile global professionals through unique specialized programs building academia-industrial partnerships.",
+        "Nurture learners to be intellectually curious, technologically equipped, mentally sound, physically fit, spiritually elevated, socio-culturally sensitive, and environmentally conscious through continuous holistic education for the ever-evolving world.",
+        "Provide technology-enabled, learner-driven curriculum, value-added courses, simulated learning environments, state-of-the-art infrastructure, and opportunities for community engagement.",
+        "Foster a culture of innovation, entrepreneurship, and research to position MIT-ADT graduates as national and global leaders."
+      ],
     },
 
   ];
@@ -74,26 +46,31 @@ const AboutMIT = () => {
       </p>
 
       {/* Vision & Mission */}
-      <h2 className="innerpage-subtitle">Vision & Mission</h2>
-      <section className="vision-mission-section">
-        <div className="vm-grid">
-          {visionData.map((item, index) => (
-            <div className="vm-card" key={index}>
-              <img src={item.img} alt={item.title} className="vm-image" />
+      <h2 className="innerpage-subtitle">Vision & Mission:</h2>
+      <section className="mit-vision-section">
+        <div className="mit-vm-grid">
+          {MITVisionData.map((item, index) => (
+            <React.Fragment key={index}>
+              <div className="mit-vm-card">
+                <img src={item.img} alt={item.title} className="mit-vm-image" />
+                <h3 className="mit-vm-card-title">{item.title}</h3>
+                {/* <p className="vm-description">{item.description}</p> */}
+                <ul className="page-list ">
+                  {Array.isArray(item.description) ? (
+                    item.description.map((point, i) => (
+                      <li key={i}>{point}</li>
+                    ))
+                  ) : (
+                    <li>{item.description}</li>
+                  )}
+                </ul>
+              </div>
 
-              {/* Optional title */}
-              <h2 className="vm-card-title">{item.title}</h2>
-
-              <ul className="page-list">
-                {Array.isArray(item.description) ? (
-                  item.description.map((point, i) => (
-                    <li key={i}>{point}</li>
-                  ))
-                ) : (
-                  <li>{item.description}</li>
-                )}
-              </ul>
-            </div>
+              {/* Horizontal divider between cards */}
+              {index < MITVisionData.length - 1 && (
+                <div className="mit-vm-divider"></div>
+              )}
+            </React.Fragment>
           ))}
         </div>
       </section>

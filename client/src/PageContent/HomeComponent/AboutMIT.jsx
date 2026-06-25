@@ -8,8 +8,7 @@ const AboutMIT = () => {
 
   return (
     <section className="about">
-      <h1 className="title">About MIT-ADT University</h1>
-      <h2 className="subtitle">Genesis and Evolution</h2>
+      <h1 className="main-title">Who We Are!</h1>
 
       <div className="about-content">
         <div className="about-image ">

@@ -6,6 +6,7 @@ const Sidebar = ({ menuItems }) => {
   const location = useLocation();
 
   return (
+    
     <div className="sidebar">
       <ul>
         {menuItems.map((item, index) => {

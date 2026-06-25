@@ -30,7 +30,7 @@ const UniversityProfile = () => {
     <section className="university-profile">
       {/* Title */}
 
-      <h1 className="title">Profile of the University</h1>
+      <h1 className="main-title">Purpose of the CDOE Initiative</h1>
       <div className="profile-text">
         <p>MIT-ADT University was formally established in the year 2016 by the Government of Maharashtra
           vide the MIT Art, Design and Technology University Act, 2015 (Mah. Act No. XXXIX of 2015) and
