@@ -41,65 +41,67 @@ const Footer = () => {
             src="/assets/images/home/mit_logo.webp"
             alt="Logo 1"
           />
-          <p style={{ color: "white" }}>
-            MIT Art, Design and Technology University, <br />
-            Rajbaug, Loni Kalbhor, Solapur Highway, Pune, 412201. Maharashtra , India
+          <p className="ft-address">
+            MIT Art, Design and Technology University,Rajbaug,  <br />
+            Loni Kalbhor, Solapur Highway,
+            Pune, 412201. Maharashtra , India
           </p>
         </div>
 
+        <div className="links-section">
+          <div className="footer-links">
+            <h4>Quick Links</h4>
+            <ul>
+              <li>Home</li>
+              <li>About</li>
+              <li>Contact Us</li>
+            </ul>
+          </div>
+
+          <div className="footer-links">
+            <h4>Programs</h4>
+            <ul>
+              <li>MBA</li>
+              <li>BBA</li>
+              <li>Quadrant System</li>
+            </ul>
+          </div>
 
 
-        <div className="footer-links">
-          <h4>Quick Links</h4>
-          <ul>
-            <li>Home</li>
-            <li>About</li>
-            <li>Contact Us</li>
-          </ul>
-        </div>
-
-        <div className="footer-links">
-          <h4>Programs</h4>
-          <ul>
-            <li>MBA</li>
-            <li>BBA</li>
-            <li>Quadrant System</li>
-          </ul>
-        </div>
+          <div className="footer-links">
+            <h4>Admission</h4>
+            <ul>
+              <li>Why CDOE ?</li>
+              <li>Why should enroll ?</li>
+            </ul>
+          </div>
 
 
-
-        <div className="footer-links">
-          <h4>Admission</h4>
-          <ul>
-            <li>Why CDOE ?</li>
-            <li>Why should enroll ?</li>
-          </ul>
-        </div>
-
-
-        <div className="footer-links">
-          <h4>Academics</h4>
-          <ul>
-            <li>  Fee Structure</li>
-            <li>Align With NEP</li>
-          </ul>
-        </div>
-
-        <div className="footer-links">
-        <div className="footer-social">
-          <div className="footer-social-icons">
-            {socialIconsData.map(({ url, network, bgColor }, index) => (
-              <SocialIcon
-                key={index}
-                className="foot-social-icons"
-                url={url}
-                network={network}
-                bgColor={bgColor}
-              />
-            ))}
+          <div className="footer-links">
+            <h4>Academics</h4>
+            <ul>
+              <li>  Fee Structure</li>
+              <li>Align With NEP</li>
+            </ul>
           </div>
         </div>
+
+
+
+        <div className="footer-links">
+          <div className="footer-social">
+            <div className="footer-social-icons">
+              {socialIconsData.map(({ url, network, bgColor }, index) => (
+                <SocialIcon
+                  key={index}
+                  className="foot-social-icons"
+                  url={url}
+                  network={network}
+                  bgColor={bgColor}
+                />
+              ))}
+            </div>
+          </div>
           <iframe
             className="map"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3783.8228655029525!2d74.02029187595625!3d18.49168107005449!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2e9784f39a613%3A0x189ffd59802ec685!2sMIT%20School%20of%20Food%20Technology%2C%20MIT%20ADT%20University%2C%20Pune!5e0!3m2!1sen!2sin!4v1773135364412!5m2!1sen!2sin"

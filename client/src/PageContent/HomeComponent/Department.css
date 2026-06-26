@@ -24,7 +24,7 @@
   color: white;
   margin-bottom: 5%;
   border: none;
-  padding: clamp(5px, 1vw, 8px) clamp(6px, 1vw, 10px);
+  padding: clamp(5px, 0.5vw, 8px) clamp(6px, 0.8vw, 10px);
   cursor: pointer;
   font-size: clamp(14px, 2vw, 18px);
   border-radius: 50%;
@@ -33,7 +33,7 @@
 
 .department-container {
   display: flex;
-  gap: clamp(15px, 5vw, 45px);
+  gap: clamp(15px, 2.5vw, 40px);
   overflow-x: auto;
   scroll-behavior: smooth;
   scrollbar-width: none;
@@ -53,7 +53,7 @@
 
 .department-card img {
   width: 100%;
-  height: clamp(180px, 40vw, 300px);
+  height: clamp(180px, 20vw, 300px);
   object-fit: cover;
    border-radius: 18px;
 }

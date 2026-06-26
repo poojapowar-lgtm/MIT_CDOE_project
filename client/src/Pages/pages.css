@@ -2,7 +2,7 @@
 .page-layout {
   display: flex;
   justify-content: space-between;
-  /* gap: clamp(10px, 2vw, 50px); */
+  gap: clamp(10px, 2vw, 50px);
   padding: clamp(10px, 4vw, 30px) 0;
 }
 
@@ -10,7 +10,7 @@
 .page-content {
   padding: 0 clamp(20px, 4vw, 50px);
   flex: 1;
-  background-color: #ffffff;
+  box-shadow: 0 0 30px rgba(240, 240, 240, 1);
 }
 
 .innerpage-title {

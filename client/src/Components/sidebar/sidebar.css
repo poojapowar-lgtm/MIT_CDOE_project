@@ -3,7 +3,7 @@
   margin-right: auto;
   padding: clamp(5px, 1.5vw, 25px) 0 clamp(5px, 1.5vw, 25px) clamp(15px, 1.5vw, 30px);
   /* background: whitesmoke; */
-  box-shadow: 6px 0 10px -2px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 30px rgba(240, 240, 240, 1);
   position: relative;
 }
 

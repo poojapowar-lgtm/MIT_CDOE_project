@@ -112,7 +112,7 @@
       font-family: calibri;
     top: clamp(10px, 2.5vw, 40px);
     right: clamp(10px, 1.5vw, 16px);
-    padding: clamp(2px, 1vw, 5px) clamp(5px, 1.5vw, 12px);
+    padding: clamp(2px, 0.5vw, 5px) clamp(5px, 0.8vw, 12px);
     border-radius: 18px;
     font-size: clamp(12px, 1.2vw, 16px);
     border: none;
