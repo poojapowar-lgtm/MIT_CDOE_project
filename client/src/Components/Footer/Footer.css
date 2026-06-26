@@ -3,7 +3,7 @@
       rgba(186, 1, 90, 1),
       rgba(69, 8, 108, 1));
   color: white;
-  padding: clamp(10px, 2vw, 25px) clamp(20px, 5vw, 80px);
+  padding: clamp(10px, 2vw, 25px);
 }
 
 
@@ -15,7 +15,7 @@
 .footer-container {
   display: flex;
   justify-content: center;
-  gap: 70px;
+  gap:clamp(20px, 4vw, 50px);
   padding-top: 20px;
   flex-wrap: wrap;
 }
@@ -23,12 +23,67 @@
 .footer-links {
   color: white;
   cursor: pointer;
-  font-size: 14px;
+}
+
+
+.footer-links h4 {
+  font-size: clamp(14px, 1.5vw, 20px);
+  color: goldenrod;
+  margin: 0;
+}
+
+.footer-links ul {
+  font-family: calibri;
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+}
+
+.footer-links li {
+  margin-bottom: 6px;
+}
+
+.footer-links a {
+  text-decoration: none;
+  font-size: clamp(12px, 1.2vw, 18px);
+}
+
+.footer-links a:hover {
+  color: #007bff;
+}
+
+.footer-social {
+  display: flex;
+  align-items: center;
+}
+
+.footer-social-icons {
+  display: flex;
+  gap: 12px;
+  margin: 0 auto;
+  padding-bottom: clamp(10px, 1.5vw, 20px);
+}
+
+/* Each icon */
+.footer-social-icons a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px !important;
+  height: 40px !important;
+  border-radius: 50%;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+/* Hover effect */
+.footer-social-icons a:hover {
+  transform: translateY(-3px);
 }
 
 .map {
   flex: 1;
-width: 500px;
+  width:clamp(250px, 40vw, 450px);
   min-height: 200px;
   border: 0;
 }
@@ -43,6 +98,8 @@ width: 500px;
 .bottom-text {
   color: wheat;
   font-size: clamp(10px, 1.2vw, 15px);
+  margin: 0 auto;
+  text-align: center;
 }
 
 .back-to-top {
@@ -69,4 +126,3 @@ width: 500px;
   transform: translateY(-4px);
   background: #004ec2;
 }
-
