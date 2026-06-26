@@ -106,7 +106,7 @@
 
 /* MAIN NAV */
 .main-navbar li span.nav-item {
-  font-size: clamp(12px, 1.2vw, 16px);
+  font-size: clamp(12px, 1.2vw, 18px);
   font-weight: 600;
   color: rgba(69, 8, 108, 1);
 }
