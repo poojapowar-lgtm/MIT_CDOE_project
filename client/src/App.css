@@ -1,11 +1,11 @@
 .App {
   background-color: white;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: calibri;
 }
 
 /* Title */
 .title {
-  font-family: fangsong;
+  font-family: calibri;
   color: rgba(186, 1, 90, 1);
   margin-bottom: 10px;
   font-size: clamp(22px, 2vw, 35px);
@@ -15,7 +15,7 @@
 
 
 .subtitle {
-  font-family: fangsong;
+  font-family: calibri;
   color: rgba(69, 8, 108, 1);
   margin: 5px;
   font-size: clamp(16px, 3vw, 22px);
@@ -46,7 +46,7 @@
 
 /* Paragraph */
 p {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: calibri;
   color: black;
   text-align: justify;
   line-height: clamp(20px, 2vw, 26px);

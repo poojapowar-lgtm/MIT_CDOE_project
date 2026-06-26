@@ -59,7 +59,7 @@ const departments = [
 
   return (
     <section className="department-section">
-      <h2 className="title">Our Departments</h2>
+      <h2 className="title">Our Specilatioins</h2>
 
       <div className="scroll-wrapper">
         <button className="scroll-btn left" onClick={scrollLeft}>

@@ -55,6 +55,7 @@
   width: 100%;
   height: clamp(180px, 40vw, 300px);
   object-fit: cover;
+   border-radius: 18px;
 }
 
 
