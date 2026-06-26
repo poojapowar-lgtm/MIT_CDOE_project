@@ -56,7 +56,7 @@ const Accreditation = () => {
   ];
 
   return (
-    <section className="global-section">
+    <section className="accreditation-section">
       <h2 className="title">Accreditation & Ranking</h2>
 
       <div className="logo-slider">
@@ -69,7 +69,7 @@ const Accreditation = () => {
         </div>
       </div>
 
-      <div className="accreditation-container" style={{ margin: "0 auto", width: "85%" }}>
+      <div className="accreditation-container">
         {globalData.map((item, index) => (
           <div className="accreditation-card" key={index}>
 

@@ -6,7 +6,11 @@
   margin-bottom: clamp(16px, 2vw, 30px);
 }
 
-
+.profile-content{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(1rem, 3vw, 3rem);
+}
 
 
 .board-body-container {
@@ -105,7 +109,7 @@
 
 /* IMAGE */
 .mit-vm-image {
-  width: clamp(45px, 5vw, 70px);
+  width: clamp(35px, 5vw, 60px);
   margin-bottom: 10px;
 }
 
@@ -129,6 +133,12 @@
 
 /* Mobile: 1 card per row */
 @media (max-width: 600px) {
+  .profile-content{
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+
   .board-body-container {
     grid-template-columns: 1fr;
   }

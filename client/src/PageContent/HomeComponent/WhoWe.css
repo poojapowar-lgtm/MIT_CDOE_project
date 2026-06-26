@@ -3,33 +3,29 @@
   background: #f8fafc;
 }
 
-.main-title {
+/* .main-title {
   display: flex;
   align-items: center;
   text-align: left;
+    font-size: clamp(22px, 2.5vw, 35px);
   gap: 10px;
   color: rgba(186, 1, 90, 1);
 }
 
 .main-title::after {
   content: "";
-  flex: 1;              /* makes line take full available width */
+  flex: 1;
   height: 2px;
-  background-color: green;
+  background: linear-gradient(to right, rgb(10, 172, 10) 30%, transparent 100%);
   margin-top: 15px;
-}
+} */
+
 /* CARD CONTAINER */
 .about-content {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: clamp(1rem, 3vw, 3rem);
+  gap: clamp(0.5rem, 2vw, 3rem);
   align-items: center;
-  background: linear-gradient(135deg, #ffffff, #f1f5f9);
-  padding: clamp(1.5rem, 3vw, 2.5rem);
-  border-radius: 16px;
-  box-shadow:
-    0 10px 30px rgba(0, 0, 0, 0.08),
-    inset 0 1px 0 rgba(255, 255, 255, 0.6);
 }
 
 
@@ -87,13 +83,4 @@
   }
 }
 
-/* MOBILE */
-@media (max-width: 576px) {
-  .national-about {
-    padding: 1rem;
-  }
 
-  .about-content {
-    padding: 1.2rem;
-  }
-}

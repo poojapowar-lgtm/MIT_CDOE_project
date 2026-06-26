@@ -1,24 +1,34 @@
 .department-section {
-  padding: clamp(20px, 4vw, 30px) clamp(15px, 6vw, 75px);
+  width: 90%;
+  margin: 0 auto;
+  padding: clamp(10px, 2vw, 30px) 0;
 }
 
-/* Wrapper now gives space to buttons */
 .scroll-wrapper {
   display: flex;
   align-items: center;
   gap: clamp(10px, 2vw, 20px);
 }
 
-/* Buttons take space normally */
+.department-card {
+  border-radius: 18px;
+  padding: clamp(10px, 1.5vw, 20px);
+  margin: clamp(10px, 1.5vw, 20px) 0;
+  box-shadow:
+    0 -4px 10px rgba(0, 0, 0, 0.06),
+    0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
 .scroll-btn {
   background: rgba(186, 1, 90, 1);
   color: white;
+  margin-bottom: 5%;
   border: none;
-  padding: clamp(4px, 2vw, 8px) clamp(5px, 2vw, 10px);
+  padding: clamp(5px, 1vw, 8px) clamp(6px, 1vw, 10px);
   cursor: pointer;
   font-size: clamp(14px, 2vw, 18px);
   border-radius: 50%;
-  flex-shrink: 0; /* prevent shrinking */
+  flex-shrink: 0;
 }
 
 .department-container {
@@ -34,20 +44,20 @@
   display: none;
 }
 
-/* 3 cards in one row */
+
 .department-card {
-  flex: 0 0 calc(33.33% - 17px); /* adjust gap spacing */
+  flex: 0 0 calc(30% - 20px);
   text-align: center;
 }
 
-/* Image */
+
 .department-card img {
   width: 100%;
-  height: clamp(230px, 40vw, 300px);
+  height: clamp(180px, 40vw, 300px);
   object-fit: cover;
 }
 
-/* Text */
+
 .dep-name {
   color: rgba(69, 8, 108, 1);
   font-size: clamp(14px, 2.5vw, 18px);

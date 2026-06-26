@@ -25,6 +25,7 @@
 .campus-left,
 .campus-right {
   flex: 1;
+  min-width: 0;
 }
 
 .campus-img {
@@ -45,7 +46,10 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-
+  align-items: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+  padding: 10px;
+  min-width: 0;
 }
 
 /* Title */
@@ -56,19 +60,28 @@
   color: rgba(69, 8, 108, 1);
   align-items: center;
   font-size: clamp(12px, 1.2vw, 18px);
-  border-bottom: 1px solid goldenrod;
+  /* border-bottom: 1px solid goldenrod; */
 }
 
 .profile-card p {
   margin: 0;
+  text-align: center;
 }
 
 
 /* Tablet */
 @media (max-width: 576px) {
   .campus-content {
-    flex-direction: column;
+    flex-direction: column-reverse;
     text-align: center;
   }
 
+  .campus-left,
+  .campus-right {
+    width: 100%;
+  }
+
+  .profile-container {
+    grid-template-columns: 1fr;
+  }
 }

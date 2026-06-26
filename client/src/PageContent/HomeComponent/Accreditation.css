@@ -1,5 +1,12 @@
-.global-section {
-  padding: clamp(20px, 4vw, 30px);
+.accreditation-section {
+  width: 90%;
+  margin: 0 auto;
+  padding: clamp(10px,2vw, 20px) 0;
+  margin: clamp(10px, 2vw, 30px) auto;
+    border-radius: 18px;
+    box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.08),
+    inset 0 1px 0 rgba(255, 255, 255, 0.6);
   text-align: center;
 }
 
@@ -42,15 +49,10 @@
 
 .accreditation-container {
   margin: 0 auto;
-  width: 85%;
+  width: 90% !important;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: clamp(15px, 2vw, 40px);
-  border-radius: 16px;
-    padding: clamp(15px, 2vw, 30px);
-  box-shadow:
-    0 10px 30px rgba(0, 0, 0, 0.08),
-    inset 0 1px 0 rgba(255, 255, 255, 0.6);
+  gap: clamp(15px, 5vw, 60px);
 }
 
 /* Card Styling */
@@ -65,15 +67,15 @@
   display: flex;
   color: rgba(69, 8, 108, 1);
   align-items: center;
-  font-size: clamp(16px, 1.5vw, 22px);
-  margin-bottom: clamp(10px, 1.2vw, 16px);
-  border-bottom: 1px solid goldenrod;
+  font-size: clamp(14px, 1.5vw, 20px);
+  margin: 0px;
+  border-bottom: 1px solid lightgray;
 }
 
 /* Icon */
 .title-icon {
-  width: clamp(14px, 1.2vw, 20px);
-  height: clamp(14px, 1.2vw, 20px);
+  width: clamp(12px, 1.2vw, 18px);
+  height: clamp(12px, 1.2vw, 18px);
 }
 
 /* Text */

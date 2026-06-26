@@ -3,7 +3,7 @@
   display: flex;
   justify-content: space-between;
   /* gap: clamp(10px, 2vw, 50px); */
-  padding: clamp(10px, 4vw, 30px) 0 ;
+  padding: clamp(10px, 4vw, 30px) 0;
 }
 
 /* Left Content */
@@ -16,10 +16,17 @@
 .innerpage-title {
   font-family: fangsong;
   color: rgba(186, 1, 90, 1);
-  font-size: clamp(18px, 2vw, 30px);
-  border-bottom: 1px solid goldenrod;
-  margin-top: 0;
+  font-size: clamp(22px, 2vw, 34px);
 }
+
+.innerpage-title::after {
+  content: "";
+  flex: 1;
+  height: 2px;
+  background: linear-gradient(to right, rgb(10, 172, 10) 30%, transparent 100%);
+  margin-bottom: 10px;
+}
+
 
 .innerpage-subtitle {
   font-family: fangsong;
@@ -213,8 +220,7 @@ table tbody tr:nth-child(odd) {
 
 @media (max-width: 768px) {
   .page-layout {
-    flex-direction: column-reverse;
-    /* stack vertically */
+    flex-direction: column;
     padding: clamp(10px, 4vw, 20px) 0;
   }
 }

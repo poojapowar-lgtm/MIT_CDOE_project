@@ -52,7 +52,7 @@ const Leadership = () => {
     return (
         <>
             <h2 className="innerpage-title">Leadership</h2>
-            <div className="board-body-container" style={{ gridTemplateColumns: "repeat(3, 1fr)" }}>
+            <div className="board-body-container">
                 {KeyLeaders.map((item, index) => (
                     <div key={index}>
                         {/* Card */}

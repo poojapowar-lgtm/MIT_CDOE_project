@@ -8,10 +8,11 @@
   font-family: fangsong;
   color: rgba(186, 1, 90, 1);
   margin-bottom: 10px;
-  font-size: clamp(22px, 2.5vw, 35px);
+  font-size: clamp(22px, 2vw, 35px);
   font-weight: 700;
   text-align: center;
 }
+
 
 .subtitle {
   font-family: fangsong;
@@ -21,7 +22,26 @@
   padding: clamp(5px, 1.5vw, 10px);
   font-weight: 700;
   text-align: center;
-  border-top: 1px solid goldenrod;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+/* LEFT line  */
+.subtitle::before {
+  content: "";
+  flex: 1;
+  height: 2px;
+  background: linear-gradient(to left, rgb(10, 172, 10), transparent);
+}
+
+/* RIGHT line*/
+.subtitle::after {
+  content: "";
+  flex: 1;
+  height: 2px;
+  background: linear-gradient(to right, rgb(10, 172, 10), transparent);
 }
 
 /* Paragraph */

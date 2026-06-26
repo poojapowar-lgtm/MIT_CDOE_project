@@ -129,6 +129,33 @@ export const navMenus = [
 
 ];
 
+export const DeskHamburgerMenus = [
+  {
+    key: "collaboration",
+    title: "Collaboration",
+  },
+  {
+    key: "infrastructure",
+    title: "Infrastructure",
+  },
+  {
+    key: "learner-support",
+    title: "Learner Support",
+  },
+  {
+    key: "IQAC",
+    title: "IQAC",
+  },
+    {
+    key: "alumna-cell",
+    title: "Alumna Cell",
+  },
+  {
+    key: "gallery",
+    title: "Gallery",
+  }
+]
+
 // export const subMenus = [
 //   //alumni
 //   {

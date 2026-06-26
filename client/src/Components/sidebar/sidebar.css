@@ -63,12 +63,4 @@
     margin-bottom: 0;
   }
 
-  /* Hover / active effect */
-  .sidebar li a:hover,
-  .sidebar li.active a {
-    border-bottom: 1px solid #722327;
-    color: #004d00;
-    font-weight: 600;
-  }
-
 }
