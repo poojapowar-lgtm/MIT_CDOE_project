@@ -34,7 +34,7 @@ Creator & Visionary Leader — Vishwaraj Baug, Loni Kalbhor, Pune, India`,
     id: 3,
     type: "director",
     sectionTitle: "From The Desk Hon.Executive Director",
-    name: "Dr. Sunita Karad",
+    name: "Hon. Prof. Dr. Sunita Karad",
     designation: `Executive Director, MIT Art, Design and Technology University
 Vishwaraj Baug, Loni Kalbhor, Pune, India`,
     image: "/assets/images/home/Dr.Sunita_karad.png",
