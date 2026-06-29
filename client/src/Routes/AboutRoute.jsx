@@ -17,7 +17,8 @@ export const AboutRoute = (
     <Route index element={<AboutMIT />} />
     <Route path="about-mit" element={<AboutMIT />} />
     <Route path="leadership" element={<Leadership />} />
-    <Route path="leadership-message" element={<LeadershipMsg />} />
+    {/* <Route path="leadership-message" element={<LeadershipMsg />} /> */}
+    <Route path="/aboutus/:type" element={<LeadershipMsg />} />
     <Route path="vision" element={<Vision />} />
     <Route path="university-statute" element={<UniversityStatute />} />
     <Route path="governance" element={<Governance />} />

@@ -10,7 +10,10 @@ const AboutUs = () => {
   const menu = [
     { name: "About MIT-ADT", path: "about-mit" },
     { name: "University Statute", path: "university-statute" },
-    { name: "Leadership Message", path: "leadership-message" },
+    // { name: "Leadership Message", path: "leadership-message" },
+    { name: "From the desk of Founder Father and President ", path: "founder" },
+    { name: "From the desk of Hon. Executive President", path: "president" },
+    { name: "From the desk of Hon. Executive Director", path: "director" },
     { name: "Vision & Mission", path: "vision" },
     { name: "Leadership", path: "leadership" },
     { name: "Governance", path: "governance" },
@@ -20,7 +23,10 @@ const AboutUs = () => {
   const titleMap = {
     "about-mit": "About MIT-ADT",
     "university-statute": "University Statute",
-    "leadership-message": "Leadership Message",
+    "founder": "From the desk of Founder Father and President",
+    "president": "From the desk of Hon. Executive President",
+    "director": "From the desk of Hon. Executive Director",
+    // "leadership-message": "Leadership Message",
     "Vision & Mission": "vision",
     "leadership": "Leadership",
     "governance": "Governance",
