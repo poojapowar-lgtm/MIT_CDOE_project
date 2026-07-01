@@ -1,65 +1,82 @@
-/* Leader Section */
-/* .leader-card {
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
-  border-radius: 18px;
-  padding: clamp(10px, 3vw, 20px) clamp(20px, 3vw, 40px);
-} */
+.sectionSubtitle {
+  font-size: clamp(18px, 1.2vw, 20px);
+  color: rgba(69, 8, 108, 1);
+}
 
-.leader-section {
+/* ROW LAYOUT */
+.row {
   display: flex;
-  gap: clamp(20px, 3vw, 40px);
-  align-items: flex-start;
-
+  flex-direction: row;
+  gap: clamp(15px, 3vw, 50px);
+  align-items: center;
+  margin-bottom: clamp(20px, 4vw, 60px);
 }
 
-.leader-image img {
-  width: clamp(200px, 25vw, 400px);
-  height: auto;
-  /* border-radius: 50%; */
-  border: 2px solid rgba(0, 0, 0, 0.1);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
-}
-
-.leader-content {
+/* TEXT */
+.text {
   flex: 1;
-}
-
-.leader-name {
-  color: rgba(69, 8, 108, 1);
-  font-size: clamp(15px, 1.6vw, 22px);
-  margin: 5px 0;
-}
-
-.leader-designation {
-    font-size: clamp(15px, 1.6vw, 20px);
-  color: rgba(69, 8, 108, 1);
-  font-weight: 600;
-  font-style: italic;
-}
-
-.leader-message {
+  font-size: clamp(14px, 1.1vw, 18px);
   line-height: 1.7;
 }
 
-/* Bottom gallery */
-.leadership-gallery {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+/* IMAGE */
+.image {
+  flex: 1;
 }
 
-.leadership-gallery img {
+.image img {
+  width: auto;
+  height: clamp(200px, 20vw, 350px);
+  border-radius: 10px;
+}
+
+/* CENTER IMAGE */
+.center-image {
+  display: flex;
+  gap: clamp(20px, 2vw, 40px);
+  justify-content: center;
+}
+
+.center-image img {
+  width: auto;
+  height: clamp(200px, 20vw, 300px);
+  border-radius: 10px;
+}
+
+/* FULL WIDTH TEXT */
+.full-text {
   width: 100%;
-  border-radius: 8px;
+  font-size: clamp(14px, 1.1vw, 18px);
+  line-height: 1.7;
+  margin-bottom: clamp(20px, 3vw, 40px);
 }
 
+/* QUOTE */
+.quote {
+  text-align: center;
+  font-size: clamp(16px, 1.4vw, 22px);
+  color: rgba(186, 1, 90, 1);
+  font-weight: bold;
+  margin-bottom: clamp(10px, 1.5vw, 20px);
+}
 
-/* Mobile View */
-@media (max-width: 1440px) {
-  .leader-section {
-    flex-direction: column;
-    align-items: center;
-    gap: 0;
+/* ---------------- MOBILE RESPONSIVE ---------------- */
+@media (max-width: 768px) {
+  .row {
+    flex-direction: column-reverse;
   }
 
+  .row.reverse {
+    flex-direction: column;
+  }
+
+
+  .center-image{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .text {
+    text-align: justify;
+  }
 }

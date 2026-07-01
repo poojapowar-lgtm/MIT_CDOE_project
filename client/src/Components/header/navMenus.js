@@ -13,16 +13,12 @@ export const navMenus = [
     columns: [
       { name: "About MIT-ADT", to: "/aboutus/about-mit" },
       { name: "University Statute", to: "/aboutus/university-statute" },
-      // { name: "Leadership Message", to: "/aboutus/leadership-message" },
       { name: "From the desk of Founder Father and President ", to: "/aboutus/founder" },
       { name: "From the desk of Hon. Executive President", to: "/aboutus/president" },
       { name: "From the desk of Hon. Executive Director", to: "/aboutus/director" },
       { name: "Vision & Mission", to: "/aboutus/vision" },
       { name: "Leadership ", to: "/aboutus/leadership" },
       { name: "Governance", to: "/aboutus/governance" },
-      // { name: "Principal Message", to: "/aboutus/principal-message" },
-      // { name: "Board of Management", to: "/aboutus/board-of-management" },
-      // { name: "Governing Body", to: "/aboutus/governing-body" },
     ],
 
 
